@@ -7,11 +7,14 @@
   <title>Document</title>
 </head>
 <body>
+  <ul>
   Lista de Familiares:
-  {% for familiares in familiares %}
-  <p>{{ familiares.parentesco }}</p>
-  <p>{{ familiares.name }}</p>
-  <p>{{ familiares.edad }}</p>
+  {% for x in familiares_lista %}
+    <h1>{{x.parentesco}}</h1>
+    <p>{{x.name}}</p>
+    <p>{{x.edad}}</p>
   {% endfor %}
+  <ul>
+
 </body>
 </html>

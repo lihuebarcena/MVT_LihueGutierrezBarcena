@@ -3,7 +3,7 @@ from django.db import models
 # Create your models here.
 
 
-class familiares(models.Model):
+class familiares_lista(models.Model):
     parentesco=models.CharField(max_length=100)
     name=models.CharField(max_length=100)
     edad=models.IntegerField()
