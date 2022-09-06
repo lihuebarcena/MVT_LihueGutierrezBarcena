@@ -9,10 +9,10 @@
 <body>
   <ul>
   Lista de Familiares:
-  {% for x in familiares_lista %}
-    <h1>{{x.parentesco}}</h1>
-    <p>{{x.name}}</p>
-    <p>{{x.edad}}</p>
+  {% for familia in familiares %}
+    <h1>{{familia.parentesco}}</h1>
+    <p>{{familia.name}}</p>
+    <p>{{familia.edad}}</p>
   {% endfor %}
   <ul>
 
