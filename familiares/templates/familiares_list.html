@@ -8,11 +8,15 @@
 </head>
 <body>
   <ul>
-  Lista de Familiares:
+    <h1 style="color:dodgerblue"> Lista de Familiares: </h1>
+
   {% for familia in familiares %}
-    <h1>{{familia.parentesco}}</h1>
-    <p>{{familia.name}}</p>
-    <p>{{familia.edad}}</p>
+    <strong style="color:Plum">id: </strong> {{familia.id}}</p>
+    <strong style="color:Plum">Parentesco: </strong> {{familia.parentesco}}</p>
+    <strong style="color:Plum">Nombre: </strong> {{familia.name}}</p>
+    <strong style="color:Plum">Edad: </strong> {{familia.edad}}</p>
+    <strong style="color:Plum">Fecha de Nacimiento: </strong> {{familia.year_born}}</p>
+
   {% endfor %}
   <ul>
 
